@@ -1,0 +1,6 @@
+framework module Pods_Meditech {
+  umbrella header "Pods-Meditech-umbrella.h"
+
+  export *
+  module * { export * }
+}

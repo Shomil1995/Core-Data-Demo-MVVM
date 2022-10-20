@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C14BB09DC4F061C34EFE43F /* Pods_Meditech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084EBB8D1C449BEFEFF0CA0F /* Pods_Meditech.framework */; };
+		5A3B67DC28B783E2006291D4 /* CandidateListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B67DB28B783E1006291D4 /* CandidateListVC.swift */; };
+		5A3B67DF28B78412006291D4 /* CandidateListTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B67DE28B78412006291D4 /* CandidateListTblCell.swift */; };
+		5A3B67E128B78642006291D4 /* CandidateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B67E028B78642006291D4 /* CandidateListViewModel.swift */; };
+		5A3B67E328B7867E006291D4 /* CandidateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B67E228B7867E006291D4 /* CandidateModel.swift */; };
+		5A3EBCFC28B8CC56008553F6 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EBCFB28B8CC56008553F6 /* ApiCall.swift */; };
+		5A4C850328B7A09800141807 /* CandidateDetails+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C850228B7A09800141807 /* CandidateDetails+CoreDataClass copy.swift */; };
+		5A4C850928B7A0BA00141807 /* CandidateDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C850828B7A0BA00141807 /* CandidateDetails+CoreDataProperties.swift */; };
+		5ABB6FEF28B4E03800CB9741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB6FEE28B4E03800CB9741 /* AppDelegate.swift */; };
+		5ABB6FF328B4E03800CB9741 /* CandidateDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB6FF228B4E03800CB9741 /* CandidateDetailVC.swift */; };
+		5ABB6FF628B4E03800CB9741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB6FF428B4E03800CB9741 /* Main.storyboard */; };
+		5ABB6FF928B4E03800CB9741 /* Meditech.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB6FF728B4E03800CB9741 /* Meditech.xcdatamodeld */; };
+		5ABB6FFB28B4E03800CB9741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB6FFA28B4E03800CB9741 /* Assets.xcassets */; };
+		5ABB6FFE28B4E03800CB9741 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB6FFC28B4E03800CB9741 /* LaunchScreen.storyboard */; };
+		5ABB700928B4E03800CB9741 /* MeditechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB700828B4E03800CB9741 /* MeditechTests.swift */; };
+		5ABB701328B4E03800CB9741 /* MeditechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB701228B4E03800CB9741 /* MeditechUITests.swift */; };
+		5ABB701528B4E03800CB9741 /* MeditechUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB701428B4E03800CB9741 /* MeditechUITestsLaunchTests.swift */; };
+		5ABB705528B4E06700CB9741 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702328B4E06700CB9741 /* ArrayExtensions.swift */; };
+		5ABB705628B4E06700CB9741 /* FloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702428B4E06700CB9741 /* FloatExtensions.swift */; };
+		5ABB705728B4E06700CB9741 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702528B4E06700CB9741 /* PlaceholderTextView.swift */; };
+		5ABB705828B4E06700CB9741 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702628B4E06700CB9741 /* DictionaryExtensions.swift */; };
+		5ABB705928B4E06700CB9741 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702728B4E06700CB9741 /* StringExtensions.swift */; };
+		5ABB705A28B4E06700CB9741 /* ExtensionImagePickerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702828B4E06700CB9741 /* ExtensionImagePickerOption.swift */; };
+		5ABB705B28B4E06700CB9741 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702928B4E06700CB9741 /* Extension.swift */; };
+		5ABB705C28B4E06700CB9741 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702A28B4E06700CB9741 /* DoubleExtensions.swift */; };
+		5ABB705D28B4E06700CB9741 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702B28B4E06700CB9741 /* ViewExtension.swift */; };
+		5ABB705E28B4E06700CB9741 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702C28B4E06700CB9741 /* IntExtensions.swift */; };
+		5ABB706028B4E06700CB9741 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB702E28B4E06700CB9741 /* OptionalExtensions.swift */; };
+		5ABB706228B4E06700CB9741 /* StoryBoardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB703028B4E06700CB9741 /* StoryBoardExtension.swift */; };
+		5ABB706328B4E06700CB9741 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB703228B4E06700CB9741 /* Constants.swift */; };
+		5ABB706528B4E06700CB9741 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB703428B4E06700CB9741 /* Global.swift */; };
+		5ABB706628B4E06700CB9741 /* ZAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB703528B4E06700CB9741 /* ZAlertView.swift */; };
+		5ABB706728B4E06700CB9741 /* MKMagneticProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB703628B4E06700CB9741 /* MKMagneticProgress.swift */; };
+		5ABB706928B4E06700CB9741 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB703828B4E06700CB9741 /* ShadowButton.swift */; };
+		5ABB706C28B4E06700CB9741 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB703B28B4E06700CB9741 /* FloatLabelTextField.swift */; };
+		5ABB707928B4E06700CB9741 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB704D28B4E06700CB9741 /* Utility.swift */; };
+		5ABB707B28B4E06700CB9741 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB704F28B4E06700CB9741 /* Country.json */; };
+		5ABB707E28B4E06700CB9741 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB705428B4E06700CB9741 /* ConnectionCheck.swift */; };
+		5ABB708428B4E22800CB9741 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB708028B4E22800CB9741 /* Poppins-Medium.ttf */; };
+		5ABB708528B4E22800CB9741 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB708128B4E22800CB9741 /* Poppins-Regular.ttf */; };
+		5ABB708628B4E22800CB9741 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB708228B4E22800CB9741 /* Poppins-Bold.ttf */; };
+		5ABB708728B4E22800CB9741 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB708328B4E22800CB9741 /* Poppins-SemiBold.ttf */; };
+		5ABB708A28B4E42F00CB9741 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB708928B4E42F00CB9741 /* ColorAssets.xcassets */; };
+		5ABB70A328B4EEED00CB9741 /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB70A228B4EEED00CB9741 /* CountryListModel.swift */; };
+		5AEDB07728B5EF3B0097454C /* CandidateDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEDB07628B5EF3B0097454C /* CandidateDetailViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ABB700528B4E03800CB9741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ABB6FE328B4E03700CB9741 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ABB6FEA28B4E03800CB9741;
+			remoteInfo = Meditech;
+		};
+		5ABB700F28B4E03800CB9741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ABB6FE328B4E03700CB9741 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ABB6FEA28B4E03800CB9741;
+			remoteInfo = Meditech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		084EBB8D1C449BEFEFF0CA0F /* Pods_Meditech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE79D3898E8E5832C8DDB7F /* Pods-Meditech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditech.debug.xcconfig"; path = "Target Support Files/Pods-Meditech/Pods-Meditech.debug.xcconfig"; sourceTree = "<group>"; };
+		5A3B67DB28B783E1006291D4 /* CandidateListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListVC.swift; sourceTree = "<group>"; };
+		5A3B67DE28B78412006291D4 /* CandidateListTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListTblCell.swift; sourceTree = "<group>"; };
+		5A3B67E028B78642006291D4 /* CandidateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListViewModel.swift; sourceTree = "<group>"; };
+		5A3B67E228B7867E006291D4 /* CandidateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateModel.swift; sourceTree = "<group>"; };
+		5A3EBCFB28B8CC56008553F6 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		5A4C850228B7A09800141807 /* CandidateDetails+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CandidateDetails+CoreDataClass copy.swift"; sourceTree = "<group>"; };
+		5A4C850828B7A0BA00141807 /* CandidateDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CandidateDetails+CoreDataProperties.swift"; path = "/Users/shomil/Desktop/Meditech/Font/CandidateDetails+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		5ABB6FEB28B4E03800CB9741 /* Meditech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABB6FEE28B4E03800CB9741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5ABB6FF228B4E03800CB9741 /* CandidateDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateDetailVC.swift; sourceTree = "<group>"; };
+		5ABB6FF528B4E03800CB9741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5ABB6FF828B4E03800CB9741 /* Meditech.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meditech.xcdatamodel; sourceTree = "<group>"; };
+		5ABB6FFA28B4E03800CB9741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ABB6FFD28B4E03800CB9741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5ABB6FFF28B4E03800CB9741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ABB700428B4E03800CB9741 /* MeditechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABB700828B4E03800CB9741 /* MeditechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditechTests.swift; sourceTree = "<group>"; };
+		5ABB700E28B4E03800CB9741 /* MeditechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABB701228B4E03800CB9741 /* MeditechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditechUITests.swift; sourceTree = "<group>"; };
+		5ABB701428B4E03800CB9741 /* MeditechUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditechUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5ABB702328B4E06700CB9741 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		5ABB702428B4E06700CB9741 /* FloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatExtensions.swift; sourceTree = "<group>"; };
+		5ABB702528B4E06700CB9741 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		5ABB702628B4E06700CB9741 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		5ABB702728B4E06700CB9741 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		5ABB702828B4E06700CB9741 /* ExtensionImagePickerOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionImagePickerOption.swift; sourceTree = "<group>"; };
+		5ABB702928B4E06700CB9741 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5ABB702A28B4E06700CB9741 /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		5ABB702B28B4E06700CB9741 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		5ABB702C28B4E06700CB9741 /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		5ABB702E28B4E06700CB9741 /* OptionalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
+		5ABB703028B4E06700CB9741 /* StoryBoardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardExtension.swift; sourceTree = "<group>"; };
+		5ABB703228B4E06700CB9741 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5ABB703428B4E06700CB9741 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		5ABB703528B4E06700CB9741 /* ZAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAlertView.swift; sourceTree = "<group>"; };
+		5ABB703628B4E06700CB9741 /* MKMagneticProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMagneticProgress.swift; sourceTree = "<group>"; };
+		5ABB703828B4E06700CB9741 /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		5ABB703B28B4E06700CB9741 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		5ABB704128B4E06700CB9741 /* BuilderFly-Client-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BuilderFly-Client-Bridging-Header.h"; sourceTree = "<group>"; };
+		5ABB704D28B4E06700CB9741 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		5ABB704F28B4E06700CB9741 /* Country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
+		5ABB705428B4E06700CB9741 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
+		5ABB708028B4E22800CB9741 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		5ABB708128B4E22800CB9741 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		5ABB708228B4E22800CB9741 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		5ABB708328B4E22800CB9741 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		5ABB708828B4E25C00CB9741 /* Meditech.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meditech.h; sourceTree = "<group>"; };
+		5ABB708928B4E42F00CB9741 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		5ABB70A228B4EEED00CB9741 /* CountryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListModel.swift; sourceTree = "<group>"; };
+		5AEDB07628B5EF3B0097454C /* CandidateDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewModel.swift; sourceTree = "<group>"; };
+		CEFC766E1C0428640B75BC30 /* Pods-Meditech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditech.release.xcconfig"; path = "Target Support Files/Pods-Meditech/Pods-Meditech.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ABB6FE828B4E03800CB9741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C14BB09DC4F061C34EFE43F /* Pods_Meditech.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB700128B4E03800CB9741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB700B28B4E03800CB9741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33EB3E7A44F7C1F35868FBE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EE79D3898E8E5832C8DDB7F /* Pods-Meditech.debug.xcconfig */,
+				CEFC766E1C0428640B75BC30 /* Pods-Meditech.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5A3B67D728B770D3006291D4 /* Candidate Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB70A128B4EED100CB9741 /* Model */,
+				5ABB70A528B4F07700CB9741 /* View */,
+				5ABB70A428B4F06800CB9741 /* ViewModel */,
+			);
+			path = "Candidate Detail";
+			sourceTree = "<group>";
+		};
+		5A3B67D828B77134006291D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B67E228B7867E006291D4 /* CandidateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A3B67D928B7713B006291D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B67DB28B783E1006291D4 /* CandidateListVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A3B67DA28B77142006291D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B67E028B78642006291D4 /* CandidateListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5A3B67DD28B783E8006291D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B67DE28B78412006291D4 /* CandidateListTblCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5ABB6FE228B4E03700CB9741 = {
+			isa = PBXGroup;
+			children = (
+				5A4C850228B7A09800141807 /* CandidateDetails+CoreDataClass copy.swift */,
+				5A4C850828B7A0BA00141807 /* CandidateDetails+CoreDataProperties.swift */,
+				5ABB708E28B4E83800CB9741 /* App Delegate */,
+				5ABB708D28B4E6F600CB9741 /* Assets */,
+				5ABB708C28B4E6D500CB9741 /* Modules */,
+				5ABB708B28B4E6C900CB9741 /* Design */,
+				5ABB707F28B4E22800CB9741 /* Font */,
+				5ABB702128B4E04900CB9741 /* Helper */,
+				5ABB6FED28B4E03800CB9741 /* Meditech */,
+				5ABB700728B4E03800CB9741 /* MeditechTests */,
+				5ABB701128B4E03800CB9741 /* MeditechUITests */,
+				5ABB6FEC28B4E03800CB9741 /* Products */,
+				33EB3E7A44F7C1F35868FBE1 /* Pods */,
+				91BF450D3A5EA35C02CD51F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5ABB6FEC28B4E03800CB9741 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB6FEB28B4E03800CB9741 /* Meditech.app */,
+				5ABB700428B4E03800CB9741 /* MeditechTests.xctest */,
+				5ABB700E28B4E03800CB9741 /* MeditechUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ABB6FED28B4E03800CB9741 /* Meditech */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB6FFC28B4E03800CB9741 /* LaunchScreen.storyboard */,
+				5ABB6FFF28B4E03800CB9741 /* Info.plist */,
+				5ABB6FF728B4E03800CB9741 /* Meditech.xcdatamodeld */,
+			);
+			path = Meditech;
+			sourceTree = "<group>";
+		};
+		5ABB700728B4E03800CB9741 /* MeditechTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB700828B4E03800CB9741 /* MeditechTests.swift */,
+			);
+			path = MeditechTests;
+			sourceTree = "<group>";
+		};
+		5ABB701128B4E03800CB9741 /* MeditechUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB701228B4E03800CB9741 /* MeditechUITests.swift */,
+				5ABB701428B4E03800CB9741 /* MeditechUITestsLaunchTests.swift */,
+			);
+			path = MeditechUITests;
+			sourceTree = "<group>";
+		};
+		5ABB702128B4E04900CB9741 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB705028B4E06700CB9741 /* ApiCall */,
+				5ABB702228B4E06700CB9741 /* Extension */,
+				5ABB705328B4E06700CB9741 /* Reachability */,
+				5ABB703128B4E06700CB9741 /* Utility */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5ABB702228B4E06700CB9741 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB702328B4E06700CB9741 /* ArrayExtensions.swift */,
+				5ABB702428B4E06700CB9741 /* FloatExtensions.swift */,
+				5ABB702528B4E06700CB9741 /* PlaceholderTextView.swift */,
+				5ABB702628B4E06700CB9741 /* DictionaryExtensions.swift */,
+				5ABB702728B4E06700CB9741 /* StringExtensions.swift */,
+				5ABB702828B4E06700CB9741 /* ExtensionImagePickerOption.swift */,
+				5ABB702928B4E06700CB9741 /* Extension.swift */,
+				5ABB702A28B4E06700CB9741 /* DoubleExtensions.swift */,
+				5ABB702B28B4E06700CB9741 /* ViewExtension.swift */,
+				5ABB702C28B4E06700CB9741 /* IntExtensions.swift */,
+				5ABB702E28B4E06700CB9741 /* OptionalExtensions.swift */,
+				5ABB703028B4E06700CB9741 /* StoryBoardExtension.swift */,
+				5ABB708828B4E25C00CB9741 /* Meditech.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5ABB703128B4E06700CB9741 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB703228B4E06700CB9741 /* Constants.swift */,
+				5ABB703428B4E06700CB9741 /* Global.swift */,
+				5ABB703528B4E06700CB9741 /* ZAlertView.swift */,
+				5ABB703628B4E06700CB9741 /* MKMagneticProgress.swift */,
+				5ABB703828B4E06700CB9741 /* ShadowButton.swift */,
+				5ABB703B28B4E06700CB9741 /* FloatLabelTextField.swift */,
+				5ABB704128B4E06700CB9741 /* BuilderFly-Client-Bridging-Header.h */,
+				5ABB704D28B4E06700CB9741 /* Utility.swift */,
+				5ABB704F28B4E06700CB9741 /* Country.json */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5ABB705028B4E06700CB9741 /* ApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				5A3EBCFB28B8CC56008553F6 /* ApiCall.swift */,
+			);
+			path = ApiCall;
+			sourceTree = "<group>";
+		};
+		5ABB705328B4E06700CB9741 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB705428B4E06700CB9741 /* ConnectionCheck.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		5ABB707F28B4E22800CB9741 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB708028B4E22800CB9741 /* Poppins-Medium.ttf */,
+				5ABB708128B4E22800CB9741 /* Poppins-Regular.ttf */,
+				5ABB708228B4E22800CB9741 /* Poppins-Bold.ttf */,
+				5ABB708328B4E22800CB9741 /* Poppins-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		5ABB708B28B4E6C900CB9741 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB6FF428B4E03800CB9741 /* Main.storyboard */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		5ABB708C28B4E6D500CB9741 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B67D728B770D3006291D4 /* Candidate Detail */,
+				5ABB70A028B4EEBF00CB9741 /* Candidate List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5ABB708D28B4E6F600CB9741 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB708928B4E42F00CB9741 /* ColorAssets.xcassets */,
+				5ABB6FFA28B4E03800CB9741 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5ABB708E28B4E83800CB9741 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB6FEE28B4E03800CB9741 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		5ABB70A028B4EEBF00CB9741 /* Candidate List */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B67DD28B783E8006291D4 /* Cell */,
+				5A3B67DA28B77142006291D4 /* ViewModel */,
+				5A3B67D928B7713B006291D4 /* View */,
+				5A3B67D828B77134006291D4 /* Model */,
+			);
+			path = "Candidate List";
+			sourceTree = "<group>";
+		};
+		5ABB70A128B4EED100CB9741 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB70A228B4EEED00CB9741 /* CountryListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5ABB70A428B4F06800CB9741 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5AEDB07628B5EF3B0097454C /* CandidateDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5ABB70A528B4F07700CB9741 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB6FF228B4E03800CB9741 /* CandidateDetailVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91BF450D3A5EA35C02CD51F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084EBB8D1C449BEFEFF0CA0F /* Pods_Meditech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ABB6FEA28B4E03800CB9741 /* Meditech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABB701828B4E03800CB9741 /* Build configuration list for PBXNativeTarget "Meditech" */;
+			buildPhases = (
+				C60C1AF5467E5DF93AD5E4B5 /* [CP] Check Pods Manifest.lock */,
+				5ABB6FE728B4E03800CB9741 /* Sources */,
+				5ABB6FE828B4E03800CB9741 /* Frameworks */,
+				5ABB6FE928B4E03800CB9741 /* Resources */,
+				FC10B13F0A482E40253ED828 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meditech;
+			productName = Meditech;
+			productReference = 5ABB6FEB28B4E03800CB9741 /* Meditech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ABB700328B4E03800CB9741 /* MeditechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABB701B28B4E03800CB9741 /* Build configuration list for PBXNativeTarget "MeditechTests" */;
+			buildPhases = (
+				5ABB700028B4E03800CB9741 /* Sources */,
+				5ABB700128B4E03800CB9741 /* Frameworks */,
+				5ABB700228B4E03800CB9741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ABB700628B4E03800CB9741 /* PBXTargetDependency */,
+			);
+			name = MeditechTests;
+			productName = MeditechTests;
+			productReference = 5ABB700428B4E03800CB9741 /* MeditechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5ABB700D28B4E03800CB9741 /* MeditechUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABB701E28B4E03800CB9741 /* Build configuration list for PBXNativeTarget "MeditechUITests" */;
+			buildPhases = (
+				5ABB700A28B4E03800CB9741 /* Sources */,
+				5ABB700B28B4E03800CB9741 /* Frameworks */,
+				5ABB700C28B4E03800CB9741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ABB701028B4E03800CB9741 /* PBXTargetDependency */,
+			);
+			name = MeditechUITests;
+			productName = MeditechUITests;
+			productReference = 5ABB700E28B4E03800CB9741 /* MeditechUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ABB6FE328B4E03700CB9741 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5ABB6FEA28B4E03800CB9741 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					5ABB700328B4E03800CB9741 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 5ABB6FEA28B4E03800CB9741;
+					};
+					5ABB700D28B4E03800CB9741 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 5ABB6FEA28B4E03800CB9741;
+					};
+				};
+			};
+			buildConfigurationList = 5ABB6FE628B4E03700CB9741 /* Build configuration list for PBXProject "Meditech" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5ABB6FE228B4E03700CB9741;
+			productRefGroup = 5ABB6FEC28B4E03800CB9741 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ABB6FEA28B4E03800CB9741 /* Meditech */,
+				5ABB700328B4E03800CB9741 /* MeditechTests */,
+				5ABB700D28B4E03800CB9741 /* MeditechUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ABB6FE928B4E03800CB9741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ABB707B28B4E06700CB9741 /* Country.json in Resources */,
+				5ABB6FFE28B4E03800CB9741 /* LaunchScreen.storyboard in Resources */,
+				5ABB708628B4E22800CB9741 /* Poppins-Bold.ttf in Resources */,
+				5ABB6FFB28B4E03800CB9741 /* Assets.xcassets in Resources */,
+				5ABB708A28B4E42F00CB9741 /* ColorAssets.xcassets in Resources */,
+				5ABB708528B4E22800CB9741 /* Poppins-Regular.ttf in Resources */,
+				5ABB708728B4E22800CB9741 /* Poppins-SemiBold.ttf in Resources */,
+				5ABB6FF628B4E03800CB9741 /* Main.storyboard in Resources */,
+				5ABB708428B4E22800CB9741 /* Poppins-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB700228B4E03800CB9741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB700C28B4E03800CB9741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C60C1AF5467E5DF93AD5E4B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meditech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC10B13F0A482E40253ED828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meditech/Pods-Meditech-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meditech/Pods-Meditech-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meditech/Pods-Meditech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ABB6FE728B4E03800CB9741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3B67DF28B78412006291D4 /* CandidateListTblCell.swift in Sources */,
+				5ABB705A28B4E06700CB9741 /* ExtensionImagePickerOption.swift in Sources */,
+				5A3EBCFC28B8CC56008553F6 /* ApiCall.swift in Sources */,
+				5ABB706928B4E06700CB9741 /* ShadowButton.swift in Sources */,
+				5ABB706328B4E06700CB9741 /* Constants.swift in Sources */,
+				5ABB6FF928B4E03800CB9741 /* Meditech.xcdatamodeld in Sources */,
+				5ABB705528B4E06700CB9741 /* ArrayExtensions.swift in Sources */,
+				5A3B67E328B7867E006291D4 /* CandidateModel.swift in Sources */,
+				5ABB706728B4E06700CB9741 /* MKMagneticProgress.swift in Sources */,
+				5ABB706C28B4E06700CB9741 /* FloatLabelTextField.swift in Sources */,
+				5ABB70A328B4EEED00CB9741 /* CountryListModel.swift in Sources */,
+				5ABB705628B4E06700CB9741 /* FloatExtensions.swift in Sources */,
+				5ABB707928B4E06700CB9741 /* Utility.swift in Sources */,
+				5A3B67E128B78642006291D4 /* CandidateListViewModel.swift in Sources */,
+				5ABB705C28B4E06700CB9741 /* DoubleExtensions.swift in Sources */,
+				5ABB705B28B4E06700CB9741 /* Extension.swift in Sources */,
+				5ABB706628B4E06700CB9741 /* ZAlertView.swift in Sources */,
+				5ABB707E28B4E06700CB9741 /* ConnectionCheck.swift in Sources */,
+				5ABB705928B4E06700CB9741 /* StringExtensions.swift in Sources */,
+				5ABB706228B4E06700CB9741 /* StoryBoardExtension.swift in Sources */,
+				5A4C850328B7A09800141807 /* CandidateDetails+CoreDataClass copy.swift in Sources */,
+				5ABB705E28B4E06700CB9741 /* IntExtensions.swift in Sources */,
+				5ABB705828B4E06700CB9741 /* DictionaryExtensions.swift in Sources */,
+				5ABB706028B4E06700CB9741 /* OptionalExtensions.swift in Sources */,
+				5AEDB07728B5EF3B0097454C /* CandidateDetailViewModel.swift in Sources */,
+				5ABB6FF328B4E03800CB9741 /* CandidateDetailVC.swift in Sources */,
+				5ABB6FEF28B4E03800CB9741 /* AppDelegate.swift in Sources */,
+				5ABB705728B4E06700CB9741 /* PlaceholderTextView.swift in Sources */,
+				5A4C850928B7A0BA00141807 /* CandidateDetails+CoreDataProperties.swift in Sources */,
+				5ABB705D28B4E06700CB9741 /* ViewExtension.swift in Sources */,
+				5ABB706528B4E06700CB9741 /* Global.swift in Sources */,
+				5A3B67DC28B783E2006291D4 /* CandidateListVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB700028B4E03800CB9741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ABB700928B4E03800CB9741 /* MeditechTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABB700A28B4E03800CB9741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ABB701528B4E03800CB9741 /* MeditechUITestsLaunchTests.swift in Sources */,
+				5ABB701328B4E03800CB9741 /* MeditechUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ABB700628B4E03800CB9741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ABB6FEA28B4E03800CB9741 /* Meditech */;
+			targetProxy = 5ABB700528B4E03800CB9741 /* PBXContainerItemProxy */;
+		};
+		5ABB701028B4E03800CB9741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ABB6FEA28B4E03800CB9741 /* Meditech */;
+			targetProxy = 5ABB700F28B4E03800CB9741 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5ABB6FF428B4E03800CB9741 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ABB6FF528B4E03800CB9741 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5ABB6FFC28B4E03800CB9741 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ABB6FFD28B4E03800CB9741 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5ABB701628B4E03800CB9741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5ABB701728B4E03800CB9741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ABB701928B4E03800CB9741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE79D3898E8E5832C8DDB7F /* Pods-Meditech.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditech/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shomil.Meditech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/shomil/Desktop/Meditech/Helper/Extension/Meditech.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ABB701A28B4E03800CB9741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFC766E1C0428640B75BC30 /* Pods-Meditech.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditech/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shomil.Meditech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/shomil/Desktop/Meditech/Helper/Extension/Meditech.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5ABB701C28B4E03800CB9741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shomil.MeditechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meditech.app/Meditech";
+			};
+			name = Debug;
+		};
+		5ABB701D28B4E03800CB9741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shomil.MeditechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meditech.app/Meditech";
+			};
+			name = Release;
+		};
+		5ABB701F28B4E03800CB9741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shomil.MeditechUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meditech;
+			};
+			name = Debug;
+		};
+		5ABB702028B4E03800CB9741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shomil.MeditechUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meditech;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ABB6FE628B4E03700CB9741 /* Build configuration list for PBXProject "Meditech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABB701628B4E03800CB9741 /* Debug */,
+				5ABB701728B4E03800CB9741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABB701828B4E03800CB9741 /* Build configuration list for PBXNativeTarget "Meditech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABB701928B4E03800CB9741 /* Debug */,
+				5ABB701A28B4E03800CB9741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABB701B28B4E03800CB9741 /* Build configuration list for PBXNativeTarget "MeditechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABB701C28B4E03800CB9741 /* Debug */,
+				5ABB701D28B4E03800CB9741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABB701E28B4E03800CB9741 /* Build configuration list for PBXNativeTarget "MeditechUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABB701F28B4E03800CB9741 /* Debug */,
+				5ABB702028B4E03800CB9741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5ABB6FF728B4E03800CB9741 /* Meditech.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5ABB6FF828B4E03800CB9741 /* Meditech.xcdatamodel */,
+			);
+			currentVersion = 5ABB6FF828B4E03800CB9741 /* Meditech.xcdatamodel */;
+			path = Meditech.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5ABB6FE328B4E03700CB9741 /* Project object */;
+}

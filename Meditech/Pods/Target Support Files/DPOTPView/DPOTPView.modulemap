@@ -1,0 +1,6 @@
+framework module DPOTPView {
+  umbrella header "DPOTPView-umbrella.h"
+
+  export *
+  module * { export * }
+}

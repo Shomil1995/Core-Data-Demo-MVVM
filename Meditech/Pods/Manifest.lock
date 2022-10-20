@@ -1,0 +1,70 @@
+PODS:
+  - DPOTPView (1.5.12)
+  - IQKeyboardManagerSwift (6.5.10)
+  - MBProgressHUD (1.2.0)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
+  - Nuke (10.7.1)
+  - PanModal (1.2.7)
+  - PhoneNumberKit (3.3.4):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.4)
+    - PhoneNumberKit/UIKit (= 3.3.4)
+  - PhoneNumberKit/PhoneNumberKitCore (3.3.4)
+  - PhoneNumberKit/UIKit (3.3.4):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - DPOTPView
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+  - "NSObject+Rx"
+  - Nuke
+  - PanModal
+  - PhoneNumberKit (~> 3.3)
+  - RxCocoa (= 6.2.0)
+  - RxSwift (= 6.2.0)
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - DPOTPView
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - "NSObject+Rx"
+    - Nuke
+    - PanModal
+    - PhoneNumberKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SkyFloatingLabelTextField
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  DPOTPView: 28d8a0a84a2ff4b1e4a7712065aba1cbb14e2704
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  PhoneNumberKit: 441e8b26ec88d598e3591de9061eff18f5dd12e8
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: c8b5ce6efa95d26d3eda88bb223f4822bdf340af
+
+COCOAPODS: 1.11.3
